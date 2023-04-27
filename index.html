@@ -17,10 +17,14 @@
     <div class="bg-overlay"></div>
     <div class="container-fluid">
       <div class="weather-wrapper"> 
-        <form class="weather-search-box">
-          <input class="weather-search" type="search" id="city" name="city" value="" placeholder="Введите ваш город...">
-          <button class="weather-search-button" type="submit"> </button>
-        </form>
+        <div class="weather-search-box">
+          <form class="weather-search-form">
+            <input class="weather-search" type="search" id="city-search" name="city" value="" placeholder="Введите ваш город..." autocomplete="off">
+            <button class="weather-search-button" type="submit"> </button>
+            <ul id="city-list"></ul>
+          </form>
+          <button class="geolocation-button" aria-label="Поиск по местоположению"></button>
+        </div>
         <div class="weather-card"> </div>
         <div class="weather-subinfo"></div>
       </div>
